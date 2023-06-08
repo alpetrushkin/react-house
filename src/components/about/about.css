@@ -1,0 +1,47 @@
+/*/////////// ABOUT /////////////////*/
+.about-body {
+    margin-top: 149px;
+    display: flex;
+    align-items: center;
+}
+
+.frame-body {
+    position: relative;
+}
+
+.frame {
+    margin-right: 30px;
+    position: relative;
+}
+
+.hand {
+    position: absolute;
+    left: 47px;
+    bottom: 47px;
+}
+
+.about-box {
+    width: 755px;
+}
+
+.about-box h3 {
+    font-weight: 500;
+    font-size: 40px;
+    color: #2C2D35;
+}
+
+.about-box p {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #2C2D35;
+}
+
+.avatar-box {
+    margin-top: 20px;
+}
+
+.avatar-box img {
+    margin-right: 30px;
+}

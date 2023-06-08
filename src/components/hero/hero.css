@@ -1,0 +1,35 @@
+/*////////// HERO ///////////////*/
+.hero-body {
+    display: flex;
+    align-items: center;
+}
+
+.hero-left img {
+    margin-right: 30px;
+}
+
+.hero-right {
+    max-width: 540px;
+}
+
+.hero-title {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 110%;
+    color: #2C2D35;
+    margin-bottom: 20px;
+}
+
+.hero-title span {
+    color: #598D66;
+}
+
+.hero-subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #86928B;
+    margin-bottom: 60px;
+}
+
+

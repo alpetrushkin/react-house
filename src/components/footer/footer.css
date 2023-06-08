@@ -1,0 +1,95 @@
+/*////////// FOOTER //////////////*/
+.footer {
+    margin-top: 70px;
+    background-color: #E1EDE6;
+}
+
+.footer-box-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-box {
+    padding: 23px 0 23px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-box-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.box-item {
+    display: flex;
+    align-items: center;
+}
+
+.footer-tel {
+    margin-top: 35px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #2C2D35;
+    transition: color 0.4s ease;
+}
+
+.footer-tel:hover {
+    color: #598D66;
+}
+
+.footer-tel-desc {
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #86928B;
+}
+
+.footer-box-center {
+    display: flex;
+    gap: 60px;
+}
+
+.footer-box-title {
+    line-height: 150%;
+    font-weight: 500;
+    font-size: 20px;
+    color: #2C2D35;
+}
+
+.footer-box-description {
+    margin-top: 6px;
+}
+
+.footer-box-description a {
+    font-weight: 500;
+    font-size: 18px;
+    color: #86928B;
+    transition: color 0.4s ease;
+}
+
+.footer-box-description a:hover {
+    color: #598D66;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.social a svg path {
+    transition: fill 0.4s ease;
+}
+
+.social a svg path:hover {
+    fill: #376B44;
+}
+
+.copyright {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    color: #86928B;
+}

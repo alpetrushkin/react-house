@@ -1,0 +1,39 @@
+.cart-link {
+    margin-left: 60px;
+    transition: stroke 0.4s ease;
+    cursor: pointer;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart-link svg {
+    stroke: #2C2D35;
+    transition: stroke 0.4s ease;
+}
+
+.cart-link svg:hover {
+    stroke: #598D66;
+}
+
+.circle {
+    position: absolute;
+    top: 2px;
+    right: 8px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #598D66;
+    margin-left: 20px;
+}
+
+.circle span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 6px;
+    color: #FFF;
+    font-size: 10px;
+}
