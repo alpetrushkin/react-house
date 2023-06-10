@@ -2,9 +2,13 @@ import React from 'react';
 import ButtonCart from "../UI/button-cart/ButtonCart";
 
 import './catalog.css';
+import Cards from "./Cards/Cards";
+import Skeleton from "./Skeleton";
 
 const Catalog = () => {
   const [item, setItem] = React.useState([]);
+  const [isLoading, setIsLoading] = React.useState(true);
+
   const sortName = ['Франция', 'Германия', 'Англия'];
   const [activeSort, setActiveSort] = React.useState(0);
   const activeNameSort = sortName.map((el, i) => {
@@ -27,7 +31,8 @@ const Catalog = () => {
         return response.json();
       })
       .then((data) => {
-        setItem(data)
+        setItem(data);
+        setIsLoading(false);
       })
   }, [])
 
@@ -43,24 +48,14 @@ const Catalog = () => {
 
         <div className="catalog-bottom">
           <ul className="catalog-list">
-            {item.map(obj => {
-              return (
-                <li className="catalog__item">
-                  <article className="product">
-                    <picture>
-                      <img src={obj.distemper} alt="product"/>
-                    </picture>
-                    <div className="product__content">
-                      <span className="product__author">{obj.author}</span>
-                      <h3 className="product__title">{obj.name}</h3>
-                      <span className="product__props">{obj.description}</span>
-                      <div className="product__price">{obj.price} руб</div>
-                      <ButtonCart title={'В корзину'} />
-                    </div>
-                  </article>
-                </li>
-              )
-            })}
+            {isLoading
+            ? ([...new Array(6)].map((_, index) => <Skeleton key={index} />))
+            : (item.map((obj, index) => {
+                return (
+                  <Cards key={index} {...obj} />
+                )
+              }))
+            }
           </ul>
         </div>
       </div>
