@@ -1,0 +1,37 @@
+.root {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    color: #2C2D35;
+}
+
+.error {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.error h1 {
+    font-size: 72px;
+}
+
+.error-desc {
+    font-size: 26px;
+}
+
+.error-link {
+    color: #376B44;
+}
+
+.error-list {
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.error-img {
+    position: absolute;
+    bottom: 60px;
+    right: 400px;
+}

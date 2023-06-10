@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.css';
 import logo from "../../assets/images/logo.svg";
-import Cart from "../UI/cart/Cart";
+import CartBtn from "../UI/cartBtn/CartBtn";
 
 const Header = () => {
   return (
@@ -24,7 +24,7 @@ const Header = () => {
               <a className="header-menu-link" href="#">О нас</a>
             </li>
           </ul>
-          <Cart />
+          <CartBtn />
         </nav>
       </div>
     </div>

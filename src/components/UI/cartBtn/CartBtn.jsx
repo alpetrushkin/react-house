@@ -1,10 +1,10 @@
 import React from 'react';
-import './cart.css';
+import './CartBtn.css';
 
-const Cart = () => {
+const CartBtn = () => {
   return (
     <>
-      <a className="cart-link" href="src/components/UI/cart/Cart#">
+      <a className="cart-link" href="#">
       <div className="cart">
         <svg className="feather feather-shopping-cart" fill="none" height="24" stroke="currentColor"
              strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" width="24"
@@ -22,4 +22,4 @@ const Cart = () => {
   );
 };
 
-export default Cart;
+export default CartBtn;
