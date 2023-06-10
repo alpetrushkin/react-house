@@ -1,0 +1,152 @@
+{
+  "france": [
+    {
+      "id": 1,
+      "author": "Марсель Руссо",
+      "name": "Охота Амура",
+      "description": "Холст, масло (50х80)",
+      "price": "14 500",
+      "distemper": "https://avatars.mds.yandex.net/get-images-cbir/2146034/VrTb5YNZICgQCZ8Smjao_A6525/ocr"
+    },
+    {
+      "id": 2,
+      "author": "Анри Селин",
+      "name": "Дама с собачкой",
+      "description": "Акрил, бумага (50х80)",
+      "price": "16 500",
+      "distemper": "https://avatars.mds.yandex.net/get-images-cbir/1039125/q_siNaVdrZ_fmGgfCfEotQ6869/ocr"
+    },
+    {
+      "id": 3,
+      "author": "Луи Детуш",
+      "name": "Процедура",
+      "description": "Цветная литография (40х60)",
+      "price": "20 000",
+      "distemper": "https://avatars.mds.yandex.net/get-images-cbir/1534468/ItcCFccei0J0SQgRoRd7Ig7020/ocr"
+    },
+    {
+      "id": 4,
+      "author": "Луи Детуш",
+      "name": "Роза",
+      "description": "Бумага, акрил (50х80)",
+      "price": "12 000",
+      "distemper": "https://avatars.mds.yandex.net/get-images-cbir/2190090/3hDEsNEgbHU_ydNMWxxLbw7263/ocr"
+    },
+    {
+      "id": 5,
+      "author": "Франсуа Дюпон",
+      "name": "Птичья трапеза",
+      "description": "Цветная литография (40х60) ",
+      "price": "22 500",
+      "distemper": "https://avatars.mds.yandex.net/get-images-cbir/1909893/bs8Z7qWR1gfxarnIdjGCsg7283/ocr"
+    },
+    {
+      "id": 6,
+      "author": "Пьер Моранж",
+      "name": "Пейзаж с рыбой",
+      "description": "Цветная литография (40х60) ",
+      "price": "20 000",
+      "distemper": "https://avatars.mds.yandex.net/get-images-cbir/4352079/1hXgpmo6xqqPkW7zhQtXMA7305/ocr"
+    }
+  ],
+  "germany": [
+    {
+      "id": 7,
+      "author": "Курт Вернер",
+      "name": "Над городом",
+      "description": "Над городом",
+      "price": "16 000",
+      "distemper": "https://avatars.mds.yandex.net/get-images-cbir/4480543/xUsOkFJQV6gTsx2_jxWJdg7753/ocr"
+    },
+    {
+      "id": 8,
+      "author": "Макс Рихтер",
+      "name": "Птенцы",
+      "description": "Холст, масло (50х80)",
+      "price": "14 500",
+      "distemper": "https://avatars.mds.yandex.net/get-images-cbir/1626562/zoeC12dvrnaDyPtNM__ZWg7786/ocr"
+    },
+    {
+      "id": 9,
+      "author": "Мартин Майер",
+      "name": "Среди листьев",
+      "description": "Цветная литография (40х60)",
+      "price": "20 000",
+      "distemper": "https://avatars.mds.yandex.net/get-images-cbir/9634756/H4S-EIwZ_NOAN4UA4S4_GQ7804/ocr"
+    },
+    {
+      "id": 10,
+      "author": "Герман Беккер",
+      "name": "Яркая птица",
+      "description": "Цветная литография (40х60)",
+      "price": "13 000",
+      "distemper": "https://avatars.mds.yandex.net/get-images-cbir/9079361/MRl5qW9lM6YPsaWo0QGtXg7831/ocr"
+    },
+    {
+      "id": 11,
+      "author": "Вульф Бауэр",
+      "name": "Дятлы",
+      "description": "Бумага, акрил (50х80)",
+      "price": "20 000",
+      "distemper": "https://avatars.mds.yandex.net/get-images-cbir/2751967/BHp020Clxp3baPrIAIun1w7850/ocr"
+    },
+    {
+      "id": 12,
+      "author": "Вальтер Хартманн",
+      "name": "Большие воды",
+      "description": "Бумага, акрил (50х80)",
+      "price": "23 000",
+      "distemper": "https://avatars.mds.yandex.net/get-images-cbir/4322236/CjKSIm5XSwcIx7AKPeFC5Q7865/ocr"
+    }
+  ],
+  "england": [
+    {
+      "id": 13,
+      "author": "Пол Смит",
+      "name": "Дикий зверь",
+      "description": "Акварель, бумага (50х80)",
+      "price": "19 500",
+      "distemper": "https://avatars.mds.yandex.net/get-images-cbir/2031996/b_7bbRQsIrI5oJTB5JXe3A8283/ocr"
+    },
+    {
+      "id": 14,
+      "author": "Джон Уайт",
+      "name": "Скалистый берег",
+      "description": "Цветная литография (40х60) ",
+      "price": "17 500",
+      "distemper": "https://avatars.mds.yandex.net/get-images-cbir/2023711/0_aVhhfu9A3d-uwO-pionQ8299/ocr"
+    },
+    {
+      "id": 15,
+      "author": "Джим Уотсон",
+      "name": "Река и горы",
+      "description": "Акварель, бумага (50х80)",
+      "price": "20 500",
+      "distemper": "https://avatars.mds.yandex.net/get-images-cbir/1023282/kQ0D78Nxhc3oPh7J2MJMvw8314/ocr"
+    },
+    {
+      "id": 16,
+      "author": "Юджин Зиллион",
+      "name": "Белый попугай",
+      "description": "Цветная литография (40х60)",
+      "price": "15 500",
+      "distemper": "https://avatars.mds.yandex.net/get-images-cbir/2918135/_qZFVv_SyV3l4AwPGghAJQ8331/ocr"
+    },
+    {
+      "id": 17,
+      "author": "Эрик Гиллман",
+      "name": "Ночная рыба",
+      "description": "Бумага, акрил (50х80)",
+      "price": "12 500",
+      "distemper": "https://avatars.mds.yandex.net/get-images-cbir/4010443/4Ls-iCqKLI4FLGm4xH9Lkg8355/ocr"
+    },
+    {
+      "id": 18,
+      "author": "Альфред Барр",
+      "name": "Рыжий кот",
+      "description": "Цветная литография (40х60)",
+      "price": "21 000",
+      "distemper": "https://avatars.mds.yandex.net/get-images-cbir/2205849/-7YcNU9N2l07VN5XzVAsIg8370/ocr"
+    }
+  ]
+}

@@ -1,9 +1,10 @@
 import React from 'react';
-import './catalog.css';
-import product1 from "../../assets/images/product/product-1.jpg";
 import ButtonCart from "../UI/button-cart/ButtonCart";
 
+import './catalog.css';
+
 const Catalog = () => {
+  const [item, setItem] = React.useState([]);
   const sortName = ['Франция', 'Германия', 'Англия'];
   const [activeSort, setActiveSort] = React.useState(0);
   const activeNameSort = sortName.map((el, i) => {
@@ -18,7 +19,17 @@ const Catalog = () => {
         </button>
       </li>
       )
-  })
+  });
+
+  React.useEffect(() => {
+    fetch('http://localhost:3002/france')
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        setItem(data)
+      })
+  }, [])
 
   return (
     <section className="catalog">
@@ -32,62 +43,24 @@ const Catalog = () => {
 
         <div className="catalog-bottom">
           <ul className="catalog-list">
-            <li className="catalog__item">
-              <article className="product">
-                <picture>
-                  <img src={product1} alt="product"/>
-                </picture>
-                <div className="product__content">
-                  <span className="product__author">Марсель Руссо</span>
-                  <h3 className="product__title">Охота Амура</h3>
-                  <span className="product__props">Холст, масло (50х80) </span>
-                  <div className="product__price">14 500 руб</div>
-                  <ButtonCart title={'В корзину'} />
-                </div>
-              </article>
-            </li>
-            <li className="catalog__item">
-              <article className="product">
-                <picture>
-                  <img src={product1} alt="product"/>
-                </picture>
-                <div className="product__content">
-                  <span className="product__author">Марсель Руссо</span>
-                  <h3 className="product__title">Охота Амура</h3>
-                  <span className="product__props">Холст, масло (50х80) </span>
-                  <div className="product__price">14 500 руб</div>
-                  <ButtonCart title={'В корзину'} />
-                </div>
-              </article>
-            </li>
-            <li className="catalog__item">
-              <article className="product">
-                <picture>
-                  <img src={product1} alt="product"/>
-                </picture>
-                <div className="product__content">
-                  <span className="product__author">Марсель Руссо</span>
-                  <h3 className="product__title">Охота Амура</h3>
-                  <span className="product__props">Холст, масло (50х80) </span>
-                  <div className="product__price">14 500 руб</div>
-                  <ButtonCart title={'В корзину'} />
-                </div>
-              </article>
-            </li>
-            <li className="catalog__item">
-              <article className="product">
-                <picture>
-                  <img src={product1} alt="product"/>
-                </picture>
-                <div className="product__content">
-                  <span className="product__author">Марсель Руссо</span>
-                  <h3 className="product__title">Охота Амура</h3>
-                  <span className="product__props">Холст, масло (50х80) </span>
-                  <div className="product__price">14 500 руб</div>
-                  <ButtonCart title={'В корзину'} />
-                </div>
-              </article>
-            </li>
+            {item.map(obj => {
+              return (
+                <li className="catalog__item">
+                  <article className="product">
+                    <picture>
+                      <img src={obj.distemper} alt="product"/>
+                    </picture>
+                    <div className="product__content">
+                      <span className="product__author">{obj.author}</span>
+                      <h3 className="product__title">{obj.name}</h3>
+                      <span className="product__props">{obj.description}</span>
+                      <div className="product__price">{obj.price} руб</div>
+                      <ButtonCart title={'В корзину'} />
+                    </div>
+                  </article>
+                </li>
+              )
+            })}
           </ul>
         </div>
       </div>
