@@ -1,10 +1,11 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 import './CartBtn.css';
 
 const CartBtn = () => {
   return (
     <>
-      <a className="cart-link" href="#">
+      <Link to="/cart" className="cart-link">
       <div className="cart">
         <svg className="feather feather-shopping-cart" fill="none" height="24" stroke="currentColor"
              strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" width="24"
@@ -17,7 +18,7 @@ const CartBtn = () => {
           <span>1</span>
         </div>
       </div>
-    </a>
+    </Link>
     </>
   );
 };

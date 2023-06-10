@@ -1,5 +1,6 @@
 import React from 'react';
 import './NotFoundBlock.css';
+import {Link} from "react-router-dom";
 
 const NotFoundBlock = () => {
   return (
@@ -11,9 +12,9 @@ const NotFoundBlock = () => {
           </div>
           <ul>
             <li className="error-list">
-              <a href="/" className="error-link">
+              <Link to="/" className="error-link">
                 Перейти к главной странице сайта
-              </a>
+              </Link>
             </li>
             <li className="error-list">Проверить правильность введенного адреса</li>
             <li className="error-list">Вернуться туда, откуда пришли (<i>нажать кнопку «Назад» в своем браузере</i>)
