@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-house/static/css/main.c51a6443.css",
+    "main.js": "/react-house/static/js/main.fd148653.js",
+    "static/media/pic_background.png": "/react-house/static/media/pic_background.f82fce77e8270227cd7a.png",
+    "static/media/Layer.png": "/react-house/static/media/Layer.3fb1426ce879bda0eed0.png",
+    "static/media/hand.png": "/react-house/static/media/hand.4d5a7304cecd916fe9db.png",
+    "static/media/frame.png": "/react-house/static/media/frame.d2ff7414271e8e118405.png",
+    "static/media/1.jpg": "/react-house/static/media/1.e96872f84cd870b9e0ec.jpg",
+    "static/media/avatar1.png": "/react-house/static/media/avatar1.8c45f9fc5775ab699cbe.png",
+    "static/media/avatar3.png": "/react-house/static/media/avatar3.0dea9ef0d91866a7523a.png",
+    "static/media/star.svg": "/react-house/static/media/star.597e7fdd0bbb6b14596770ed0493ed9b.svg",
+    "index.html": "/react-house/index.html",
+    "static/media/logo.svg": "/react-house/static/media/logo.4b05650776f57ae29637a2315f961895.svg",
+    "main.c51a6443.css.map": "/react-house/static/css/main.c51a6443.css.map",
+    "main.fd148653.js.map": "/react-house/static/js/main.fd148653.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c51a6443.css",
+    "static/js/main.fd148653.js"
+  ]
+}
