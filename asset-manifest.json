@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-house/static/css/main.c51a6443.css",
+    "main.css": "/react-house/static/css/main.d1bcce35.css",
     "main.js": "/react-house/static/js/main.fd148653.js",
     "static/media/pic_background.png": "/react-house/static/media/pic_background.f82fce77e8270227cd7a.png",
     "static/media/Layer.png": "/react-house/static/media/Layer.3fb1426ce879bda0eed0.png",
@@ -12,11 +12,11 @@
     "static/media/star.svg": "/react-house/static/media/star.597e7fdd0bbb6b14596770ed0493ed9b.svg",
     "index.html": "/react-house/index.html",
     "static/media/logo.svg": "/react-house/static/media/logo.4b05650776f57ae29637a2315f961895.svg",
-    "main.c51a6443.css.map": "/react-house/static/css/main.c51a6443.css.map",
+    "main.d1bcce35.css.map": "/react-house/static/css/main.d1bcce35.css.map",
     "main.fd148653.js.map": "/react-house/static/js/main.fd148653.js.map"
   },
   "entrypoints": [
-    "static/css/main.c51a6443.css",
+    "static/css/main.d1bcce35.css",
     "static/js/main.fd148653.js"
   ]
 }
