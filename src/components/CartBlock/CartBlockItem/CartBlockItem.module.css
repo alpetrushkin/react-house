@@ -1,0 +1,92 @@
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    border-top: 1px solid #f1f3f2;
+}
+
+.productImg {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.product img {
+    width: 85px;
+}
+
+.productImgItem {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-left: 30px;
+}
+
+.productAuthor {
+    opacity: 0.6;
+}
+
+.count {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.countBtn {
+    display: flex;
+    align-items: center;
+}
+
+.countBtn button {
+    padding: 6px 10px;
+    border-radius: 50%;
+    border: 2px solid #598D66;
+    background-color: inherit;
+    font-size: 18px;
+}
+
+.countBtn span {
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.outsideCircle {
+    border: 1px solid rgba(89, 141, 102, 0.6);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.outsideCircle:active {
+    border: 1px solid green;
+}
+
+.boxCircle {
+    width: 20px;
+    height: 20px;
+}
+
+.boxCircle svg path {
+    stroke: #598D66;
+}
+
+svg path:active {
+    stroke: green;
+}
+
+.remove {
+    transition: color 0.3s ease;
+}
+
+.remove:hover {
+    color: red;
+}
+
+.remove:active {
+    color: #630202;
+}

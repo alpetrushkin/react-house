@@ -7,6 +7,9 @@
 .cart {
     position: relative;
 }
+.cart svg {
+    width: 30px;
+}
 
 .cart-link svg {
     stroke: #2C2D35;
@@ -20,7 +23,7 @@
 .circle {
     position: absolute;
     top: 2px;
-    right: 8px;
+    left: -14px;
     width: 15px;
     height: 15px;
     border-radius: 100%;
