@@ -8,7 +8,6 @@ import Skeleton from "./Skeleton";
 const Catalog = () => {
   const [item, setItem] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
-
   const sortName = ['Франция', 'Германия', 'Англия'];
   const [activeSort, setActiveSort] = React.useState(0);
   const activeNameSort = sortName.map((el, i) => {
@@ -34,6 +33,7 @@ const Catalog = () => {
         setItem(data);
         setIsLoading(false);
       })
+      window.scrollTo(0, 0)
   }, [])
 
   return (
