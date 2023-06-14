@@ -4,28 +4,16 @@ import ButtonCart from "../UI/button-cart/ButtonCart";
 import './catalog.css';
 import Cards from "./Cards/Cards";
 import Skeleton from "./Skeleton";
+import ActiveSort from "./activeSort/ActiveSort";
 
 const Catalog = () => {
   const [item, setItem] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
-  const sortName = ['Франция', 'Германия', 'Англия'];
+
   const [activeSort, setActiveSort] = React.useState(0);
-  const activeNameSort = sortName.map((el, i) => {
-    return (
-      <li key={i} className="catalog-tabs__item">
-        <button
-          onClick={() => setActiveSort(i)}
-          className={activeSort === i
-            ? "btn-reset catalog-tabs__btn catalog-tabs__btn--active"
-            : "btn-reset catalog-tabs__btn"}>
-          {el}
-        </button>
-      </li>
-      )
-  });
 
   React.useEffect(() => {
-    fetch('http://localhost:3002/france')
+    fetch('http://localhost:3002/items?locationId=england')
       .then((response) => {
         return response.json();
       })
@@ -41,8 +29,9 @@ const Catalog = () => {
       <div className="container">
         <div className="catalog-top">
           <h2 className="catalog-name">Репродукция</h2>
+          <h3>по цене</h3>
           <ul className="catalog-tabs">
-            {activeNameSort}
+            <ActiveSort value={activeSort} onClickActive={(id) => setActiveSort(id)} />
           </ul>
         </div>
 
