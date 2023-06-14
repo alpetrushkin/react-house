@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ActiveSort = ({value, onClickActive}) => {
-  const sortName = ['Франция', 'Германия', 'Англия'];
+const FilterLocation = ({value, onClickActive}) => {
+  const filterName = ['Франция', 'Германия', 'Англия'];
 
-  const activeNameSort = sortName.map((el, i) => {
+  const activeFilterLocation = filterName.map((el, i) => {
     return (
       <li key={i} className="catalog-tabs__item">
         <button
@@ -17,9 +17,9 @@ const ActiveSort = ({value, onClickActive}) => {
     )
   });
 
-  return <>{activeNameSort}</>
+  return <>{activeFilterLocation}</>
 
 
 };
 
-export default ActiveSort;
+export default FilterLocation;

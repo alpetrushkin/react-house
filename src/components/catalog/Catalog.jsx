@@ -1,19 +1,20 @@
 import React from 'react';
-import ButtonCart from "../UI/button-cart/ButtonCart";
-
-import './catalog.css';
 import Cards from "./Cards/Cards";
 import Skeleton from "./Skeleton";
-import ActiveSort from "./activeSort/ActiveSort";
+import FilterLocation from "./FilterLocation/FilterLocation";
+import Sort from "./Sort/Sort";
+
+import './catalog.css';
 
 const Catalog = () => {
   const [item, setItem] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
+  const [activeSortName, setActiveSortName] = React.useState(0);
 
-  const [activeSort, setActiveSort] = React.useState(0);
+  const [filterLocation, setFilterLocation] = React.useState(0);
 
   React.useEffect(() => {
-    fetch('http://localhost:3002/items?locationId=england')
+    fetch(`http://localhost:3002/items?locationId=${filterLocation}`)
       .then((response) => {
         return response.json();
       })
@@ -22,16 +23,22 @@ const Catalog = () => {
         setIsLoading(false);
       })
       window.scrollTo(0, 0)
-  }, [])
+  }, [filterLocation])
 
   return (
     <section className="catalog">
       <div className="container">
         <div className="catalog-top">
           <h2 className="catalog-name">Репродукция</h2>
-          <h3>по цене</h3>
+          <Sort
+            value={activeSortName}
+            onClickActiveSort={(id) => setActiveSortName(id)}
+          />
           <ul className="catalog-tabs">
-            <ActiveSort value={activeSort} onClickActive={(id) => setActiveSort(id)} />
+            <FilterLocation
+              value={filterLocation}
+              onClickActive={(id) => setFilterLocation(id)}
+            />
           </ul>
         </div>
 

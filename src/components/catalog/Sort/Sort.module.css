@@ -1,0 +1,50 @@
+.root {
+    margin-left: auto;
+    position: relative;
+}
+
+.root span {
+    padding-bottom: 2px;
+    margin-left: 8px;
+    border-bottom: 1px dashed #376B44;
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+.root span:hover {
+    color: #376B44;
+}
+.root span:active {
+    color: #29482e;
+}
+
+.sort {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 10;
+}
+
+.sortBox {
+    margin-top: 10px;
+    border: 1px solid #376B44;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.active {
+    background-color: #376B44;
+    color: #FFF;
+}
+.sortBox li {
+    padding: 10px 14px;
+    letter-spacing: 0.5px;
+    transition: background-color 0.4s ease;
+}
+.sortBox li:hover {
+    background-color: #598D66;
+    color: #F4F6F5;
+}
+.sortBox li:active {
+    background-color: #376B44;
+}

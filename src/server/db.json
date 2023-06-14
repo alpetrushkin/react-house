@@ -2,7 +2,7 @@
   "items": [
     {
       "id": 1,
-      "locationId": "france",
+      "locationId": "0",
       "author": "Марсель Руссо",
       "name": "Охота Амура",
       "description": "Холст, масло (50х80)",
@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "locationId": "france",
+      "locationId": "0",
       "author": "Анри Селин",
       "name": "Дама с собачкой",
       "description": "Акрил, бумага (50х80)",
@@ -20,7 +20,7 @@
     },
     {
       "id": 3,
-      "locationId": "france",
+      "locationId": "0",
       "author": "Франсуа Дюпон",
       "name": "Процедура",
       "description": "Цветная литография (40х60)",
@@ -29,7 +29,7 @@
     },
     {
       "id": 4,
-      "locationId": "france",
+      "locationId": "0",
       "author": "Луи Детуш",
       "name": "Роза",
       "description": "Бумага, акрил (50х80)",
@@ -38,7 +38,7 @@
     },
     {
       "id": 5,
-      "locationId": "france",
+      "locationId": "0",
       "author": "Франсуа Дюпон",
       "name": "Птичья трапеза",
       "description": "Цветная литография (40х60) ",
@@ -47,7 +47,7 @@
     },
     {
       "id": 6,
-      "locationId": "france",
+      "locationId": "0",
       "author": "Пьер Моранж",
       "name": "Пейзаж с рыбой",
       "description": "Цветная литография (40х60) ",
@@ -56,7 +56,7 @@
     },
     {
       "id": 7,
-      "locationId": "germany",
+      "locationId": "1",
       "author": "Курт Вернер",
       "name": "Над городом",
       "description": "Над городом",
@@ -65,7 +65,7 @@
     },
     {
       "id": 8,
-      "locationId": "germany",
+      "locationId": "1",
       "author": "Макс Рихтер",
       "name": "Птенцы",
       "description": "Холст, масло (50х80)",
@@ -74,7 +74,7 @@
     },
     {
       "id": 9,
-      "locationId": "germany",
+      "locationId": "1",
       "author": "Мартин Майер",
       "name": "Среди листьев",
       "description": "Цветная литография (40х60)",
@@ -83,7 +83,7 @@
     },
     {
       "id": 10,
-      "locationId": "germany",
+      "locationId": "1",
       "author": "Герман Беккер",
       "name": "Яркая птица",
       "description": "Цветная литография (40х60)",
@@ -92,7 +92,7 @@
     },
     {
       "id": 11,
-      "locationId": "germany",
+      "locationId": "1",
       "author": "Вульф Бауэр",
       "name": "Дятлы",
       "description": "Бумага, акрил (50х80)",
@@ -101,7 +101,7 @@
     },
     {
       "id": 12,
-      "locationId": "germany",
+      "locationId": "1",
       "author": "Вальтер Хартманн",
       "name": "Большие воды",
       "description": "Бумага, акрил (50х80)",
@@ -110,7 +110,7 @@
     },
     {
       "id": 13,
-      "locationId": "england",
+      "locationId": "2",
       "author": "Пол Смит",
       "name": "Дикий зверь",
       "description": "Акварель, бумага (50х80)",
@@ -119,7 +119,7 @@
     },
     {
       "id": 14,
-      "locationId": "england",
+      "locationId": "2",
       "author": "Джон Уайт",
       "name": "Скалистый берег",
       "description": "Цветная литография (40х60) ",
@@ -128,7 +128,7 @@
     },
     {
       "id": 15,
-      "locationId": "england",
+      "locationId": "2",
       "author": "Джим Уотсон",
       "name": "Река и горы",
       "description": "Акварель, бумага (50х80)",
@@ -137,7 +137,7 @@
     },
     {
       "id": 16,
-      "locationId": "england",
+      "locationId": "2",
       "author": "Юджин Зиллион",
       "name": "Белый попугай",
       "description": "Цветная литография (40х60)",
@@ -146,7 +146,7 @@
     },
     {
       "id": 17,
-      "locationId": "england",
+      "locationId": "2",
       "author": "Эрик Гиллман",
       "name": "Ночная рыба",
       "description": "Бумага, акрил (50х80)",
@@ -155,7 +155,7 @@
     },
     {
       "id": 18,
-      "locationId": "england",
+      "locationId": "2",
       "author": "Альфред Барр",
       "name": "Рыжий кот",
       "description": "Цветная литография (40х60)",
