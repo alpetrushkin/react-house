@@ -1,13 +1,13 @@
 import React from 'react';
 
 const FilterLocation = ({value, onClickActive}) => {
-  const filterName = ['Франция', 'Германия', 'Англия'];
+  const filterName = ['Все', 'Франция', 'Германия', 'Англия'];
 
   const activeFilterLocation = filterName.map((el, i) => {
     return (
       <li key={i} className="catalog-tabs__item">
         <button
-          onClick={()=>onClickActive(i)}
+          onClick={() => onClickActive(i)}
           className={value === i
             ? "btn-reset catalog-tabs__btn catalog-tabs__btn--active"
             : "btn-reset catalog-tabs__btn"}>
