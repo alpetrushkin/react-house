@@ -1,9 +1,10 @@
-import React from 'react';
-import './header.css';
+import React, {useState} from 'react';
 import logo from "../../assets/images/logo.svg";
 import CartBtn from "../UI/cartBtn/CartBtn";
+import Search from "../Search/Search";
+import './header.css';
 
-const Header = () => {
+const Header = ({searchTitle, setSearchTitle}) => {
   return (
     <div className="header">
       <div className="container container-header">
@@ -12,10 +13,15 @@ const Header = () => {
           <span className="logo-name">Ink. House</span>
         </div>
 
+        <Search
+          searchTitle={searchTitle}
+          setSearchTitle={setSearchTitle}
+        />
+
         <nav className="header-right">
           <ul className="header-menu">
             <li className="header-menu-item">
-              <a className="header-menu-link" href="#">Репродукции</a>
+              <a className="header-menu-link" href="#">Репродукция</a>
             </li>
             <li className="header-menu-item">
               <a className="header-menu-link" href="#">Новинки</a>
@@ -24,7 +30,7 @@ const Header = () => {
               <a className="header-menu-link" href="#">О нас</a>
             </li>
           </ul>
-          <CartBtn />
+          <CartBtn/>
         </nav>
       </div>
     </div>

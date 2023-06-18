@@ -6,18 +6,17 @@ import Newbies from "../components/newbies/Newbies";
 import About from "../components/about/About";
 import Footer from "../components/footer/Footer";
 
-const Home = () => {
+const Home = ({searchTitle}) => {
   return (
-    <div>
-      <Header />
+    <>
       <main>
-        {/*<Hero />*/}
-        <Catalog />
+        <Hero />
+        <Catalog searchTitle={searchTitle} />
         <Newbies />
         <About />
       </main>
       <Footer />
-    </div>
+    </>
   );
 };
 

@@ -4,7 +4,8 @@ import FilterLocation from "./FilterLocation/FilterLocation";
 import Sort from "./Sort/Sort";
 import './catalog.css';
 
-const Catalog = () => {
+const Catalog = ({searchTitle}) => {
+  console.log(searchTitle)
   const [item, setItem] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
   const [filterLocation, setFilterLocation] = React.useState(0);
@@ -15,12 +16,13 @@ const Catalog = () => {
   React.useEffect(() => {
     setIsLoading(true);
 
+    const search = searchTitle ? `&q=${searchTitle}` : '';
     const category = filterLocation > 0 ? `locationId=${filterLocation}` : '';
     const order = activeSortName.sortProperty.includes('-') ? 'asc' : 'desc';
     const sortBy = activeSortName.sortProperty.replace('-', '');
 
     fetch(
-      `http://localhost:3002/items?${category}&_sort=${sortBy}&_order=${order}`
+      `http://localhost:3002/items?${category}${search}&_sort=${sortBy}&_order=${order}`
     )
       .then((response) => {
         return response.json();
@@ -30,7 +32,7 @@ const Catalog = () => {
         setIsLoading(false);
       })
     window.scrollTo(0, 0)
-  }, [activeSortName, filterLocation]);
+  }, [activeSortName, filterLocation, searchTitle]);
 
   return (
     <section className="catalog">

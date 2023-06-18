@@ -1,0 +1,20 @@
+.root {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.root svg {
+    cursor: pointer;
+}
+
+.input {
+    width: 100%;
+    border: 0;
+    padding: 6px 10px;
+    font-size: 16px;
+    color: #86928B;
+    margin-right: 10px;
+    outline: red;
+}
