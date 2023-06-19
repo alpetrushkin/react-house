@@ -1,0 +1,48 @@
+.root {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+
+  li {
+    border: 2px solid #6dad7c;
+    border-radius: 2px;
+
+    a {
+      display: inline-flex;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      line-height: 28px;
+      color: #6dad7c;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+  }
+  :global {
+    .selected {
+      border: 2px solid #f06227;
+
+      a {
+        color: #f06227;
+      }
+    }
+
+  }
+
+  //li {
+  //  display: flex;
+  //  justify-content: center;
+  //  line-height: 24px;
+  //  width: 32px;
+  //  height: 32px;
+  //  border: 2px solid #6dad7c;
+  //  border-radius: 4px;
+  //  cursor: pointer;
+  //
+  //  a {
+  //    font-size: 20px;
+  //    color: #6dad7c;
+  //  }
+  //}
+}
