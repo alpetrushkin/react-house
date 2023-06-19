@@ -6,12 +6,12 @@ import Newbies from "../components/newbies/Newbies";
 import About from "../components/about/About";
 import Footer from "../components/footer/Footer";
 
-const Home = ({searchTitle}) => {
+const Home = () => {
   return (
     <>
       <main>
         <Hero />
-        <Catalog searchTitle={searchTitle} />
+        <Catalog />
         <Newbies />
         <About />
       </main>

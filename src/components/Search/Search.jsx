@@ -1,7 +1,9 @@
 import React from 'react';
+import {SearchContext} from "../../App";
 import styles from './Search.module.css';
 
-const Search = ({searchTitle, setSearchTitle }) => {
+const Search = () => {
+  const {searchTitle, setSearchTitle} = React.useContext(SearchContext);
   const [searchVisible, setSearchVisible] = React.useState(true);
 
   const onChangeHandler = (event) => {

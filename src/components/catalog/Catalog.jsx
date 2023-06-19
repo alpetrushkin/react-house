@@ -3,9 +3,12 @@ import Cards from "./Cards/Cards";
 import FilterLocation from "./FilterLocation/FilterLocation";
 import Pagination from "../Pagination/Pagination";
 import Sort from "./Sort/Sort";
+import {SearchContext} from "../../App";
 import './catalog.css';
 
-const Catalog = ({searchTitle}) => {
+const Catalog = () => {
+  const {searchTitle} = React.useContext(SearchContext);
+
   const [item, setItem] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
   const [filterLocation, setFilterLocation] = React.useState(0);

@@ -4,7 +4,7 @@ import CartBtn from "../UI/cartBtn/CartBtn";
 import Search from "../Search/Search";
 import './header.css';
 
-const Header = ({searchTitle, setSearchTitle}) => {
+const Header = () => {
   return (
     <div className="header">
       <div className="container container-header">
@@ -13,10 +13,7 @@ const Header = ({searchTitle, setSearchTitle}) => {
           <span className="logo-name">Ink. House</span>
         </div>
 
-        <Search
-          searchTitle={searchTitle}
-          setSearchTitle={setSearchTitle}
-        />
+        <Search />
 
         <nav className="header-right">
           <ul className="header-menu">
