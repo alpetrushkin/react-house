@@ -1,7 +1,7 @@
 import React from 'react';
-import './hero.css';
-import layer from "../../assets/images/Layer.png";
 import Button from "../UI/button/Button";
+import Slider from "../Slider/Slider";
+import './hero.css';
 
 const Hero = () => {
   return (
@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="container">
         <div className="hero-body">
           <div className="hero-left">
-            <img src={layer} alt="layer"/>
+            <Slider />
           </div>
           <div className="hero-right">
             <h1 className="hero-title">Реплики картин от <span>Ink. House</span></h1>
