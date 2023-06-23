@@ -4,7 +4,6 @@ import NotFound from "./pages/NotFound";
 import {Route, Routes} from "react-router-dom";
 import Cart from "./pages/Cart";
 import Header from "./components/header/Header";
-import Slider from "./components/Slider/Slider";
 
 export const SearchContext = React.createContext('');
 
