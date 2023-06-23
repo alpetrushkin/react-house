@@ -6,24 +6,32 @@ import Sort from "./Sort/Sort";
 import {SearchContext} from "../../App";
 import './catalog.css';
 
-const Catalog = () => {
-  const {searchTitle} = React.useContext(SearchContext);
+import { useSelector, useDispatch } from 'react-redux'
+import { setLocation } from '../../redux/slice/filterSlice'
 
+const Catalog = () => {
+  const dispatch = useDispatch()
+  const locationFilter = useSelector((state) => state.filter.location)
+  const sortNameActive = useSelector((state) => state.filter.sort.sortProperty)
+
+  const onChangeLocation = (id) => {
+    dispatch(setLocation(id))
+  }
+
+
+
+  const {searchTitle} = React.useContext(SearchContext);
   const [item, setItem] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
-  const [filterLocation, setFilterLocation] = React.useState(0);
-  const [activeSortName, setActiveSortName] = React.useState(
-    {name: 'сначала популярные', sortProperty: 'rating'}
-  );
   const [currentPage, setCurrentPage] = React.useState(0);
 
   React.useEffect(() => {
     setIsLoading(true);
 
     const search = searchTitle ? `&q=${searchTitle}` : '';
-    const category = filterLocation > 0 ? `locationId=${filterLocation}` : '';
-    const order = activeSortName.sortProperty.includes('-') ? 'asc' : 'desc';
-    const sortBy = activeSortName.sortProperty.replace('-', '');
+    const category = locationFilter > 0 ? `&locationId=${locationFilter}` : '';
+    const order = sortNameActive.includes('-') ? 'asc' : 'desc';
+    const sortBy = sortNameActive.replace('-', '');
     const page = `_page=${currentPage}&_limit=6`;
 
     fetch(
@@ -37,21 +45,18 @@ const Catalog = () => {
         setIsLoading(false);
       })
     window.scrollTo(0, 0)
-  }, [activeSortName, filterLocation, searchTitle, currentPage]);
+  }, [sortNameActive, locationFilter, searchTitle, currentPage]);
 
   return (
     <section className="catalog">
       <div className="container">
         <div className="catalog-top">
           <h2 className="catalog-name">Репродукция</h2>
-          <Sort
-            value={activeSortName}
-            onClickActiveSort={(id) => setActiveSortName(id)}
-          />
+          <Sort />
           <ul className="catalog-tabs">
             <FilterLocation
-              value={filterLocation}
-              onClickActive={(id) => setFilterLocation(id)}
+              value={locationFilter}
+              onClickActive={onChangeLocation}
             />
           </ul>
         </div>
