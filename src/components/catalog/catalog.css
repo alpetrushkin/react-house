@@ -62,7 +62,6 @@
 .catalog-tabs__btn--active {
     color: #fff;
     background-color: #376B44;
-    border: 1px solid red;
 }
 
 .catalog-tabs__btn--active:active {

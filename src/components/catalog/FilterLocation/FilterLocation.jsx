@@ -5,7 +5,7 @@ const FilterLocation = ({value, onClickActive}) => {
 
   const activeFilterLocation = filterName.map((el, i) => {
     return (
-      <li key={el} className="catalog-tabs__item">
+      <li key={i} className="catalog-tabs__item">
         <button
           onClick={() => onClickActive(i)}
           className={value === i

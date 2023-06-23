@@ -21,13 +21,13 @@ const Catalog = () => {
     setIsLoading(true);
 
     const search = searchTitle ? `&q=${searchTitle}` : '';
-    const category =  filterLocation > 0 ? `locationId=${filterLocation}` : '';
+    const category = filterLocation > 0 ? `locationId=${filterLocation}` : '';
     const order = activeSortName.sortProperty.includes('-') ? 'asc' : 'desc';
     const sortBy = activeSortName.sortProperty.replace('-', '');
-    const page = `_page=${currentPage}&_limit=7`;
+    const page = `_page=${currentPage}&_limit=6`;
 
     fetch(
-      `http://localhost:3002/items?${category}&${page}&${search}&_sort=${sortBy}&_order=${order}`
+      `http://localhost:3002/items?${page}${category}${search}&_sort=${sortBy}&_order=${order}`
     )
       .then((response) => {
         return response.json();
